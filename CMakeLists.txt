@@ -5,7 +5,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 project(geosim_project)
 
 add_library(geosim_core 
-src/FlatSurface.cpp
+    src/FlatSurface.cpp
+    src/Solver.cpp
 )
 
 target_include_directories(geosim_core 
