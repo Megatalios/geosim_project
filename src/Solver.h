@@ -17,4 +17,6 @@ public:
 	/// <param name="step">Шаг по параметру s</param>
 	/// <param name="numOfSteps">Количество шагов</param>
 	void solve(const ISurface& surface, const State& state, double step, int numOfSteps);
+
+	State computeDerivatives(const ISurface& surface, const State& state);
 };
