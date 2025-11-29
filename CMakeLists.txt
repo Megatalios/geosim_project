@@ -6,16 +6,19 @@ project(geosim_project)
 
 add_library(geosim_core 
     src/FlatSurface.cpp
+    src/Sphere.cpp
     src/Solver.cpp
     
     # Заголовки
     src/ISurface.h
     src/Solver.h
     src/FlatSurface.h
+    src/Sphere.h
 )
 
 add_executable(test_app
     src/FlatSurface.cpp
+    src/Sphere.cpp
     src/Solver.cpp
     src/TestExecutable/main.cpp
     
@@ -23,6 +26,7 @@ add_executable(test_app
     src/ISurface.h
     src/Solver.h
     src/FlatSurface.h
+    src/Sphere.h
 )
 
 target_include_directories(geosim_core 
